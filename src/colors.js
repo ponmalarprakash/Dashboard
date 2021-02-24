@@ -1,0 +1,15 @@
+export const White = '#FFFFFF';
+export const Black = '#000000';
+export const Grey = '#ECE9E9';
+export const LightBlue = '#4C6EF9';
+export const Blue = '#2750F3';
+export const LightGrey = '#F3F5FA';
+export const SkyBlue = '#09BAE9';
+export const Red = '#F07990';
+export const Green = '#27C383';
+export const LightSkyBlue = '#44A4F4';
+export const DarkerSkyBlue = '#0F8EF9';
+export const Transparent = '#00000065';
+export const ColorPrimary = '#D3A33F';
+export const ColorSecondary = '#030446';
+export const grey = '#757575';

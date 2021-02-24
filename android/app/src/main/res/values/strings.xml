@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dashboard</string>
+    <string name="default_notification_channel_id">Offer Notifications</string>
+</resources>
