@@ -250,7 +250,12 @@ const App = () => {
 
   return (
     <SafeAreaView
-      style={styles.container}
+      style={{
+        flex: 1,
+        backgroundColor: Colors.ColorSecondary,
+        width: orientation == 'Landscape' ? hp('100%') : wp('100%'),
+        height: orientation == 'Landscape' ? wp('100%') : hp('100%'),
+      }}
       onLayout={(event) => {
         if (event.nativeEvent.layout.width > event.nativeEvent.layout.height) {
           setOrientation('Landscape');
@@ -271,7 +276,7 @@ const App = () => {
           ListHeaderComponent={
             <View style={[styles.container, {marginBottom: hp('3%')}]}>
               <View
-                style={{position: 'absolute', top: hp('1%'), left: wp('1%')}}>
+                style={{position: 'absolute', top: hp('1%'), left: hp('1%')}}>
                 <NavigationDrawerStructure />
               </View>
               <LogoImage />
