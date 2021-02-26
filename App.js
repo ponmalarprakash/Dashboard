@@ -1,9 +1,6 @@
 import React from 'react';
 import {Image, SafeAreaView, ScrollView, StyleSheet, Text} from 'react-native';
-import {
-  heightPercentageToDP as hp,
-  widthPercentageToDP as wp,
-} from 'react-native-responsive-screen';
+import {RFValue} from 'react-native-responsive-fontsize';
 
 const chats = [
   {name: 'Prem', text: 'My God in heaven, you look like an angel'},
@@ -46,8 +43,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   img: {
-    width: wp('30%'),
-    height: hp('10%'),
+    width: '20%',
+    height: '10%',
     alignSelf: 'flex-end',
     resizeMode: 'contain',
     tintColor: 'white',
@@ -58,9 +55,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'white',
     overflow: 'hidden',
-    padding: 10,
-    margin: 10,
-    fontSize: hp('1.6%'),
+    padding: '3%',
+    margin: '5%',
+    fontSize: RFValue(15),
   },
   leftChat: {
     backgroundColor: '#c83660',
